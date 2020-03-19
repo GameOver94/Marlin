@@ -7,7 +7,27 @@
 
 <img align="right" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
 
-**This fork contains a configuration for the Ender-3 from creality with enabled suport for manual mesh bed leveling.**
+**This fork contains a configuration for the Ender-3 from creality with enabled suport for bilinear AutoBedLeveling using an inductive probe.**
+
+### Features enabled/disabled to save PROGMEM
+
+* SHOW_CUSTOM_BOOTSCREEN
+* CUSTOM_STATUS_SCREEN_IMAGE
+* SLIM_LCD_MENUS
+* SPEAKER
+
+* ARC_SUPPORT
+* AUTOTEMP
+* LCD_INFO_MENU
+* STATUS_MESSAGE_SCROLLING
+* SCROLL_LONG_FILENAMES
+* NO_VOLUMETRICS
+
+### Build falgs to save PROGMEM
+
+* build_unflags = -g -ggdb
+* build_flags   = ${common.build_flags} -fno-tree-scev-cprop -fno-split-wide-types -Wl,--relax -mcall-prologues
+
 
 Additional documentation can be found at the [Marlin Home Page](http://marlinfw.org/).
 Please let us know if Marlin misbehaves in any way. Volunteers are standing by!

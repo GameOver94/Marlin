@@ -7,7 +7,7 @@
 
 <img align="right" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
 
-**This fork contains a configuration for the Ender-3 from creality with enabled suport for bilinear AutoBedLeveling using an inductive probe.**
+**This fork contains a configuration for the Ender-3 from creality with enabled suport for bilinear AutoBedLeveling using a BLTouch.**
 
 ### Features enabled/disabled to save PROGMEM
 
